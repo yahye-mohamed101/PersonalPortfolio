@@ -1,21 +1,27 @@
-import React from 'react'; // Import React
-import projects from '../../data/projects.jsx'; // Import project data
-import Project from '../Project.jsx'; // Import Project component
+import React from 'react';
+import projects from '../../data/projects';
+import Project from '../Project';
 import '../../assets/styles/portfolio.css';
 
-
-const Portfolio = () => {
+function Portfolio() {
   return (
-    <section>
+    <section className="portfolio-section">
       <h2>My Projects</h2>
-      <div className="portfolio-container">
+      <div className="project-container">
         {projects.map((project) => (
-          <Project key={project.id} project={project} /> // Render each project
+          <Project
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            websiteLink={project.websiteLink}
+            videoLink={project.videoLink}
+            githubLink={project.githubLink}
+          />
         ))}
       </div>
     </section>
   );
-};
+}
 
-export default Portfolio; // Export Portfolio component for use in other files
-
+export default Portfolio;

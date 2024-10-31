@@ -1,11 +1,20 @@
 
+
 nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fffdfd;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a.active-link { 
+  color: #050505; 
+}

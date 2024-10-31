@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Navigation />
+      
       <main>
         <Routes>
           {/* Routes for different sections of the portfolio */}

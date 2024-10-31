@@ -1,25 +1,3 @@
 
 
-.projects {
-  display: grid; /* Grid layout */
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between projects */
-  margin: 20px 0; /* Margin for spacing */
-}
 
-.project {
-  background-color: white; /* Project card background */
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 8px; /* Rounded corners */
-  padding: 15px; /* Padding for project card */
-  transition: transform 0.2s; /* Transition for hover effect */
-}
-
-.project:hover {
-  transform: scale(1.05); /* Zoom on hover */
-}
-
-.project a {
-  display: block; /* Block display for links */
-  margin-top: 10px; /* Space above links */
-}

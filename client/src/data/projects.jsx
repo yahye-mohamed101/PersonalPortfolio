@@ -4,6 +4,7 @@ const projects = [
       description: 'A web application that utilizes HTML, CSS, and JavaScript. It allows one to store audio files in multiple different playlists by dragging and dropping in your audio files into newly created playlists. ',
       image: '/path/to/image1.jpg',
       link: 'https://yahye-mohamed101.github.io/TuneForge/',
+      video: "",
       github: 'https://github.com/yahye-mohamed101/TuneForge'
     },
     {
@@ -28,6 +29,7 @@ const projects = [
                   This application creates an easy alternative than having to write your very own ReadME file and gives you the ease of mind.
                   This application solves the issue of spending more time than necessary on building a ReadME file from scratch.`,
       image: '/path/to/image2.jpg',
+      video: "https://drive.google.com/file/d/1BsfO-86Fs6B_3v53zL7sEPjw2M7x0GMf/view?usp=sharing",
       github: 'https://github.com/yahye-mohamed101/ReadME-Generator'
     },
     

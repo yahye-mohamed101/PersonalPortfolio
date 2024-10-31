@@ -1,11 +1,11 @@
-/* src/assets/styles/Footer.css */
+
 
 footer {
-  background-color: #333333; /* Dark footer background */
-  color: white; /* Footer text color */
-  text-align: center; /* Center align text */
-  padding: 10px; /* Padding for footer */
-  position: relative; /* Positioning */
-  bottom: 0; /* Stick to the bottom */
-  width: 100%; /* Full width */
+  background-color: #333333; 
+  color: white; 
+  text-align: center; 
+  padding: 10px; 
+  position: relative; 
+  top: 0; 
+  width: 100%; 
 }

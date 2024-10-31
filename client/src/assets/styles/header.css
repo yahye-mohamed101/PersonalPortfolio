@@ -1,21 +1,21 @@
-/* src/assets/styles/Header.css */
+
 
 header {
-  background-color: #4A90E2; /* Header background */
-  color: white; /* Header text color */
-  padding: 15px 20px; /* Header padding */
-  text-align: center; /* Center align text */
+  background-color: #4A90E2; 
+  color: white; 
+  padding: 15px 20px; 
+  text-align: center; 
 }
 
 nav {
-  margin: 10px 0; /* Margin for navigation */
+  margin: 10px 0; 
 }
 
 nav a {
-  margin: 0 15px; /* Space between navigation links */
-  font-weight: bold; /* Bold links */
+  margin: 0 15px; 
+  font-weight: bold; 
 }
 
 nav a.active {
-  border-bottom: 2px solid #FF6F61; /* Active link underline */
+  border-bottom: 2px solid #FF6F61; 
 }

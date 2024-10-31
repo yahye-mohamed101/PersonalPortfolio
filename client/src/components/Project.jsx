@@ -1,17 +1,18 @@
 import React from 'react'; // Import React
-import '../assets/styles/portfolio.css';
+import '../assets/styles/project.css';
 
-const Project = ({ project }) => {
+const Project = ({ title, githubLink, image }) => {
   return (
-    <div className="project"> {/* Container for individual project */}
-      <h3>{project.title}</h3> {/* Display project title */}
-      <img src={project.image} alt={project.title} /> {/* Display project image */}
-      <p>{project.description}</p> {/* Display project description */}
-      <a href={project.liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a> {/* Link to live demo */}
-      <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub Repo</a> {/* Link to GitHub repository */}
+    <div className="project-card" style={{ backgroundImage: `url(${image})` }}>
+      <div className="overlay">
+        <h3>{title}</h3>
+        <a href={githubLink} className="link-button" target="_blank" rel="noopener noreferrer">
+          View on GitHub
+        </a>
+      </div>
     </div>
   );
 };
 
-export default Project; // Export Project component for use in other files
+export default Project;
 

@@ -1,19 +1,48 @@
-import React from 'react'; // Import React
-import { Link } from 'react-router-dom'; // Import Link component from react-router-dom for navigation
+// src/components/Navigation.jsx
+
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../assets/styles/navigation.css';
 
 function Navigation() {
   return (
     <nav>
       <ul>
-        <li><Link to="/">About Me</Link></li> {/* Link to About Me section */}
-        <li><Link to="/portfolio">Portfolio</Link></li> {/* Link to Portfolio section */}
-        <li><Link to="/contact">Contact</Link></li> {/* Link to Contact section */}
-        <li><Link to="/resume">Resume</Link></li> {/* Link to Resume section */}
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? 'active-link' : '')}
+          >
+            About Me
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/portfolio"
+            className={({ isActive }) => (isActive ? 'active-link' : '')}
+          >
+            Portfolio
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? 'active-link' : '')}
+          >
+            Contact
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/resume"
+            className={({ isActive }) => (isActive ? 'active-link' : '')}
+          >
+            Resume
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
 }
 
-export default Navigation; // Export Navigation component for use in other files
-
+export default Navigation;
