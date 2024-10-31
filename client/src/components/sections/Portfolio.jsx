@@ -1,7 +1,7 @@
 import React from 'react'; // Import React
 import projects from '../../data/projects.jsx'; // Import project data
 import Project from '../Project.jsx'; // Import Project component
-import "./assets/styles/Portfolio.css"
+import '../../assets/styles/portfolio.css';
 
 
 const Portfolio = () => {

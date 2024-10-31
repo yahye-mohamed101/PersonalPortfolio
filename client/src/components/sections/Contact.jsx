@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; // Import React and useState hook from React
-import "./assets/styles/contact.css"
+import '../../assets/styles/contact.css';
 
 function Contact() {
   // State to hold form input values

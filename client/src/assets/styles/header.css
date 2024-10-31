@@ -1,5 +1,21 @@
+/* src/assets/styles/Header.css */
 
-header h1 {
-    font-size: 2rem; /* Large title */
-  }
-  
+header {
+  background-color: #4A90E2; /* Header background */
+  color: white; /* Header text color */
+  padding: 15px 20px; /* Header padding */
+  text-align: center; /* Center align text */
+}
+
+nav {
+  margin: 10px 0; /* Margin for navigation */
+}
+
+nav a {
+  margin: 0 15px; /* Space between navigation links */
+  font-weight: bold; /* Bold links */
+}
+
+nav a.active {
+  border-bottom: 2px solid #FF6F61; /* Active link underline */
+}
