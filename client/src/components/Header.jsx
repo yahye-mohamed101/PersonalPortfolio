@@ -1,12 +1,12 @@
 import React from 'react';
 import Navigation from './Navigation';
-import '../styles/Header.css';
+import '../../assets/header.css';
 
-function Header({ setActiveSection }) {
+function Header() {
   return (
     <header className="header">
       <h1>Yahye Mohamed</h1>
-      <Navigation setActiveSection={setActiveSection} />
+      <Navigation />
     </header>
   );
 }

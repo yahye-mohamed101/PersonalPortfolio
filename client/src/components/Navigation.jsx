@@ -1,21 +1,19 @@
 import React from 'react';
-import '../styles/Navigation.css';
+import { Link } from 'react-router-dom';
+import '../../assets/navigation.css';
 
-function Navigation({ setActiveSection }) {
-  const handleClick = (section) => {
-    setActiveSection(section);
-  };
-
+function Navigation() {
   return (
     <nav>
       <ul>
-        <li onClick={() => handleClick('AboutMe')}>About Me</li>
-        <li onClick={() => handleClick('Portfolio')}>Portfolio</li>
-        <li onClick={() => handleClick('Contact')}>Contact</li>
-        <li onClick={() => handleClick('Resume')}>Resume</li>
+        <li><Link to="/">About Me</Link></li>
+        <li><Link to="/portfolio">Portfolio</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/resume">Resume</Link></li>
       </ul>
     </nav>
   );
 }
 
 export default Navigation;
+
