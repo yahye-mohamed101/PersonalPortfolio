@@ -1,0 +1,30 @@
+
+.contact-section {
+  padding: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form div {
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem; /* Smaller font for error messages */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

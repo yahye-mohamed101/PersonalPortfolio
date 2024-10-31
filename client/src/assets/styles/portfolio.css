@@ -1,0 +1,7 @@
+
+.project {
+    border: 1px solid #ccc; /* Add border to project cards */
+    padding: 1rem; /* Space inside project cards */
+    margin-bottom: 1rem; /* Space between projects */
+  }
+  
