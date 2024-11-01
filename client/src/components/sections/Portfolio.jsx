@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <section className="portfolio-section">
       <h2>My Projects</h2>
-      <div className="project-container">
+      <div className="portfolio-container">
         {projects.map((project) => (
           <Project
             key={project.id}

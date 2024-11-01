@@ -12,7 +12,7 @@ import './assets/styles/styles.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       
       <main>
