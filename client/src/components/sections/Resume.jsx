@@ -1,6 +1,6 @@
-// src/components/sections/Resume.jsx
+
 import React from 'react';
-//import './Resume.css'; // Import the CSS stylesheet for styling
+
 
 function Resume() {
     const proficiencies = [

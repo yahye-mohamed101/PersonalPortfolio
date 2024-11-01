@@ -1,5 +1,5 @@
-import React from 'react'; // Import React
-import Navigation from './Navigation'; // Import Navigation component
+import React from 'react'; 
+import Navigation from './Navigation'; 
 import '../assets/styles/header.css';
 
 function Header() {
@@ -11,4 +11,4 @@ function Header() {
   );
 }
 
-export default Header; // Export Header component for use in other files
+export default Header; 

@@ -1,7 +1,7 @@
 import React from 'react';
 import projects from '../../data/projects';
 import Project from '../Project';
-import '../../assets/styles/portfolio.css';
+
 
 function Portfolio() {
   return (

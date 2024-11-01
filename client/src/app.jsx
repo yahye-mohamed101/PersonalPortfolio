@@ -1,9 +1,8 @@
-// src/App.jsx
+
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation';
 import AboutMe from './components/sections/AboutMe';
 import Portfolio from './components/sections/Portfolio';
 import Contact from './components/sections/Contact';
