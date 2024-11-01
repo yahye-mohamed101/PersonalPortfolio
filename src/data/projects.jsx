@@ -2,7 +2,7 @@ const projects = [
     {
       title: 'TuneForge',
       description: 'A web application that utilizes HTML, CSS, and JavaScript. It allows one to store audio files in multiple different playlists by dragging and dropping in your audio files into newly created playlists. ',
-      image: '/src/assets/tuneForge_screenshot.jpg',
+      image: 'src/assets/tuneForge_screenshot.jpg',
       websiteLink: 'https://yahye-mohamed101.github.io/TuneForge/',
       githubLink: 'https://github.com/yahye-mohamed101/TuneForge'
     },
