@@ -27,7 +27,7 @@ const projects = [
       description: `A command-line application that generates a unique, professional, and dynamic ReadME file from user input using the inquirer package.
                   This application creates an easy alternative than having to write your very own ReadME file and gives you the ease of mind.
                   This application solves the issue of spending more time than necessary on building a ReadME file from scratch.`,
-      image: '/src/assets/readme-gen.PNG',
+      image: 'src/assets/readme-gen.PNG',
       video: "https://drive.google.com/file/d/1BsfO-86Fs6B_3v53zL7sEPjw2M7x0GMf/view?usp=sharing",
       githubLink: 'https://github.com/yahye-mohamed101/ReadME-Generator'
     },
