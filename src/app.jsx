@@ -7,6 +7,7 @@ import AboutMe from './components/sections/AboutMe';
 import Portfolio from './components/sections/Portfolio';
 import Contact from './components/sections/Contact';
 import Resume from './components/sections/Resume';
+import projects from './data/projects';
 import './assets/styles/styles.css';
 
 function App() {
