@@ -1,43 +1,50 @@
-
+.contact-container {
+  @apply min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-4;
+}
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 400px;
-  margin: auto;
+  @apply bg-gray-800 rounded-xl p-8 shadow-xl border border-gray-700;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.form-group {
+  @apply mb-6;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #4A90E2; 
-  outline: none;
+.form-label {
+  @apply flex gap-2 text-gray-300 mb-2;
 }
 
-.contact-form button {
-  background-color: #4A90E2;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+.form-input {
+  @apply w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white;
 }
 
-.contact-form button:hover {
-  background-color: #357ABD;
+.form-textarea {
+  @apply w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white h-32 resize-none;
 }
 
-.error {
-  color: red;
-  font-size: 14px;
-  margin-top: -10px;
-  margin-bottom: 10px;
+.error-message {
+  @apply mt-2 text-red-400 text-sm;
+}
+
+.submit-button {
+  @apply w-full bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-lg flex items-center justify-center gap-2 transition-colors;
+}
+
+.submit-button:hover {
+  @apply transform scale-102;
+}
+
+.submit-button:active {
+  @apply transform scale-98;
+}
+
+/* Form validation styles */
+.form-input.error,
+.form-textarea.error {
+  @apply border-red-500;
+}
+
+/* Success message styles */
+.success-message {
+  @apply mt-4 text-green-400 text-center;
 }

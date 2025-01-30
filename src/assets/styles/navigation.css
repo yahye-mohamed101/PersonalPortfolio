@@ -1,20 +1,35 @@
-
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.nav-container {
+  @apply fixed w-full z-50 transition-all duration-300;
 }
 
-nav a {
-  text-decoration: none;
-  color: #fffdfd;
-  padding: 10px;
-  font-weight: bold;
+.nav-scrolled {
+  @apply bg-gray-900/95 backdrop-blur-sm shadow-lg;
 }
 
-nav a.active-link { 
-  color: #050505; 
+.nav-link {
+  @apply relative flex items-center space-x-2 text-sm font-medium transition-colors;
+}
+
+.nav-link-active {
+  @apply text-blue-400;
+}
+
+.nav-link-inactive {
+  @apply text-gray-300 hover:text-white;
+}
+
+.mobile-menu {
+  @apply px-2 pt-2 pb-3 space-y-1;
+}
+
+.mobile-menu-link {
+  @apply block px-3 py-2 rounded-md text-base font-medium transition-colors;
+}
+
+.mobile-menu-active {
+  @apply bg-gray-800 text-blue-400;
+}
+
+.mobile-menu-inactive {
+  @apply text-gray-300 hover:bg-gray-700 hover:text-white;
 }

@@ -1,0 +1,65 @@
+.resume-container {
+  @apply min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-4;
+}
+
+.resume-header {
+  @apply bg-gray-800 rounded-xl p-6 mb-12 shadow-xl border border-gray-700;
+}
+
+.download-button {
+  @apply flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white transition-colors;
+}
+
+.skills-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.skill-category {
+  @apply bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700;
+}
+
+.category-icon {
+  @apply p-2 bg-blue-600 rounded-lg text-white;
+}
+
+.skills-list {
+  @apply grid grid-cols-2 gap-3;
+}
+
+.skill-item {
+  @apply bg-gray-700 rounded-lg p-3 text-gray-300 text-sm;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  @apply bg-blue-600 text-white transform scale-105;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,57 @@
+.portfolio-container {
+    @apply min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-4;
+  }
+  
+  .search-container {
+    @apply relative flex-1;
+  }
+  
+  .search-input {
+    @apply w-full pl-10 pr-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white;
+  }
+  
+  .filter-button {
+    @apply px-4 py-2 rounded-lg text-sm font-medium transition-colors;
+  }
+  
+  .filter-button-active {
+    @apply bg-blue-600 text-white;
+  }
+  
+  .filter-button-inactive {
+    @apply bg-gray-800 text-gray-300 hover:bg-gray-700;
+  }
+  
+  .projects-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  .empty-state {
+    @apply text-center py-12 text-gray-300 text-lg;
+  }
+  
+  /* Project Card Styles */
+  .project-card {
+    @apply bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image-container {
+    @apply relative group h-48 overflow-hidden;
+  }
+  
+  .project-image {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+  
+  .project-image-container:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-80;
+  }

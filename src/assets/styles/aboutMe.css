@@ -1,21 +1,41 @@
+.about-container {
+  @apply min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20;
+}
 
+.profile-image-container {
+  @apply relative inline-block mb-8;
+}
 
-.about-me {
-    text-align: center;
-    padding: 20px;
+.profile-image {
+  @apply rounded-full w-40 h-40 border-4 border-blue-500 shadow-lg;
+}
+
+.profile-image-glow {
+  @apply absolute inset-0 rounded-full;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 0px rgba(59, 130, 246, 0.5);
   }
-  
-  .about-me-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-direction: column;
+  to {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
   }
-  
-  .profile-image {
-    width: 150px; 
-    height: 150px;
-    border-radius: 50%; 
-    object-fit: cover;
-  }
-  
+}
+
+.name-title {
+  @apply text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent;
+}
+
+.subtitle {
+  @apply text-xl text-gray-300 mb-8;
+}
+
+.content-card {
+  @apply bg-gray-800 rounded-lg p-6 shadow-xl border border-gray-700;
+}
+
+.skill-tag {
+  @apply px-4 py-2 bg-blue-500 rounded-full text-sm font-medium;
+}
